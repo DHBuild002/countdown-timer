@@ -41,8 +41,12 @@ const countUp = () => {
   }
 };
 
+
+
+/*
 const buttonStart = document.getElementById("startCount");
 buttonStart.addEventListener("click", () => {
   console.log("Enter a time to countdown from");
   countUp();
 });
+*/

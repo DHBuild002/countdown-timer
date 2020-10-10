@@ -84,15 +84,15 @@ main {
 	margin: auto;
 }
 .toggle-area {
-	display: none;
 	background: rgb(234, 234, 234);
 	border: 2px solid rgb(244, 244, 244);
-	width: 20%;
 	margin: 0 auto;
 	margin-top: .3%;
 	border-radius: 3px;
 	cursor: pointer;
 	align-content: space-between;
+	width: 15%;
+	position: relative;
 }
 .toggle-area-nest-primary {
 	border-bottom: 1px solid rgb(244, 244, 244);
