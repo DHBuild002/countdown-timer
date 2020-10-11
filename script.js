@@ -24,20 +24,23 @@ const countUp = () => {
   console.log(inputTime);
 
   if (inputTime != 0) { // 5 != 0
-    document.getElementById("countdownClock").innerHTML = 0;
+    document.getElementById("countupClock").innerHTML = 0;
     let run = run => { // 5 > 0
-      let clock = document.getElementById('countdownClock');
+      let clock = document.getElementById("countupClock");
       clock.value = clock.value < inputTime ? clock.value++ : inputTime;
+      clock.innerHTML = clock.value;
      }
     setInterval(run(), 3000);
+    } else {
+      clearInterval(run);
     };
   }
 
 // Revert CD Window in UI back to empty 
 const clearHTML = () => {
   document.getElementById("input").value = "";
-  // document.getElementById("countdownClock").innerHTML = ''
-  document.getElementById("countdownClock").innerHTML = `<h3>Timer Complete.</h3> 
+  // document.getElementById("countdown/upClock").innerHTML = ''
+  document.getElementById("countupClock").innerHTML = `<h3>Timer Complete.</h3> 
 					       <p>Please enter a new time to begin again.</p>`;
 };
 
