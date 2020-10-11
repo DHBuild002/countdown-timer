@@ -1,4 +1,6 @@
-const start = () => {
+// Countdown Timer
+/*
+const countDown = () => {
   let inputTime = document.getElementById("input").value;
 
   if (inputTime != 0) {
@@ -14,39 +16,35 @@ const start = () => {
     }, 1000);
   }
 };
-const clearHTML = () => {
-  document.getElementById("input").value = "";
-  // document.getElementById("countdownClock").innerHTML = ''
-  document.getElementById(
-    "countdownClock"
-  ).innerHTML = `<h3>Timer Complete.</h3> 
-					<p>Please enter a new time to begin again.</p>`;
-};
-let btn = document.getElementById("enterTime");
-btn.addEventListener("click", () => {
-  console.log("New Time Entered");
-  start();
-});
+*/
 // Main Chunk of code sourced from here: https://stackoverflow.com/a/48343641/7206229
 
 const countUp = () => {
-  let inputUp = document.getElementById("inputUp").value;
+  let inputTime = document.getElementById("input").value; // 5
+  console.log(inputTime);
 
-  if (n > 1) {
-    return [];
-  } else {
-    const countdownArr = countUp(n - 1);
-    countdownArr.splice(0, 0, n);
-    return n;
+  if (inputTime != 0) { // 5 != 0
+    document.getElementById("countdownClock").innerHTML = 0;
+    let run = run => { // 5 > 0
+      let clock = document.getElementById('countdownClock');
+      clock.value = clock.value < inputTime ? clock.value++ : inputTime;
+     }
+    setInterval(run(), 3000);
+    };
   }
+
+// Revert CD Window in UI back to empty 
+const clearHTML = () => {
+  document.getElementById("input").value = "";
+  // document.getElementById("countdownClock").innerHTML = ''
+  document.getElementById("countdownClock").innerHTML = `<h3>Timer Complete.</h3> 
+					       <p>Please enter a new time to begin again.</p>`;
 };
 
+// Begin Countdown:
+let btn = document.getElementById("enterTime");
 
-
-/*
-const buttonStart = document.getElementById("startCount");
-buttonStart.addEventListener("click", () => {
-  console.log("Enter a time to countdown from");
+btn.addEventListener("click", () => {
+  console.log("New Time Entered");
   countUp();
 });
-*/
