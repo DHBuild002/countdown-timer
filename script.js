@@ -25,8 +25,9 @@ const countUp = () => {
 
   if (inputTime != 0) { // 5 != 0
     document.getElementById("countupClock").innerHTML = 0;
-    let run = run => { // 5 > 0
-      let clock = document.getElementById("countupClock");
+    let run = () => { // 5 > 0
+	  let clock = document.getElementById("countupClock");
+	  if(clock.innerHTML)
       clock.value = clock.value < inputTime ? clock.value++ : inputTime;
       clock.innerHTML = clock.value;
      }
