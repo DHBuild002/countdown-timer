@@ -24,4 +24,5 @@ btn.addEventListener('click', function(){
 	console.log('New Time Entered');
 	start();
 })
+
 // Main Chunk of code sourced from here: https://stackoverflow.com/a/48343641/7206229
