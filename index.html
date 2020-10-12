@@ -8,19 +8,35 @@
 	<link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-	<main>
-	<h1>Countdown Timer</h1>
-	<div class="controls">
-		<p>Enter a time to countdown from:</p>
-		<input type="number" id="input"> </input>
-	<!--The Button to apply the new time, update the countdown clock to new time, and begin the count down again -->
-	<button id="enterTime">START</button>
-</div>
-</main>
-	<!-- Displays Time counting down  -->
-	<span id="countdownClock"></span>
-	<!-- A Field that allows you to enter a time to countdown from -->
+<main>
+	<div class="padded-header">
+		<h1>Countdown Timer</h1>
+	</div>
 
+
+	<div class="controls">
+		<div class="left-control">
+			<div class="toggle-area">
+				<p id="countdown">Countdown</p>
+				<p id="countup">Countup</p>
+			</div>
+		</div>
+
+		<div class="center-control">
+			<input type="number" id="input" placeholder="Enter a number"> </input>
+		</div>
+		<div class="right-control">
+			<button id="enterTime">START</button>
+		</div>		
+	</div>
+</main>
+	<div class="clocksContainer">
+	<!-- Displays Time counting down  -->
+		
+		<span id="countupClock"></span>
+		
+	<!-- A Field that allows you to enter a time to countdown from -->
+	</div>
 	<script src="script.js"></script>
 </body>
 </html>
