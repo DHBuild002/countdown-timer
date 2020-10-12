@@ -7,6 +7,8 @@ body {
 h1{
 	text-align: center;
 	margin: 0;
+	color: white;
+	text-shadow: 2px 1px 1px rgb(233, 233, 233);
 }
 h3{
 	margin: 0;
@@ -15,7 +17,7 @@ p {
 	font-size: 13px;
 	line-height: 10px;
 }
-span {
+#countupClock {
 	background-color: #FFF;
     width: 250px;
 	height: 250px;
@@ -31,7 +33,7 @@ input {
 	border-style: none;
 	outline: none;
 	padding: 1em;
-	width: 33.33%;
+	width: auto;
 	border: none;
 	border-radius: 3px;
 	cursor: pointer;
@@ -45,7 +47,7 @@ button {
 	text-decoration: none;
 	border-style: none;
 	padding: 1em;
-	width: 33.33%;
+	width: 35%;
 	background-color: rgb(255, 255, 255);
 	box-shadow: none;
 	cursor: pointer;
@@ -60,12 +62,17 @@ button:hover{
 p {
 	margin: 10px;
 	text-align: left;
+	width: 100%;
 	display: inline;
-	text-decoration: underline;
 }
 main {
 	background-color: rgb(106, 125, 204);
 	padding: 0;
+}
+.seperator {
+	width: 1px;
+	background: black;
+	height: 25px;
 }
 .padded-header {
 	padding: 5%;
@@ -77,10 +84,52 @@ main {
 }
 .controls {
 	text-align: center;
-	display:flex; 
-	justify-content: space-between; 
+	display: flex; 
+	justify-content: space-between;
+	align-content: flex-start; 
  	width: 100%;
 	margin: 0 auto;
 	background: lightgray; 
-	padding: 1.6%;
+	padding: .3em;
 } 
+.left-control, .center-control, .right-control{
+	cursor: pointer;
+}
+
+.left-control {
+	width: 15.33%;
+	background: transparent;
+	margin: 0 auto;
+	border: none;
+	border-radius: 2px;
+}
+.center-control{
+	width: 33.33%;
+}
+.right-control {
+	width: 33.33%;
+}
+.toggle-area {
+	border-left: none
+	
+}
+#countdown, #countup {
+	display: none;
+	border: .5px solid rgb(211, 211, 211);
+	box-shadow: 1px 3px 1px .2px grey;
+	background: white;
+	color: black;
+	padding: 1em;
+	border-radius: 5px;
+}
+#countdown:hover, #countup:hover{
+	border: .5px solid rgb(211, 211, 211);
+	background: rgb(244, 244, 244);
+	color: rgb(0, 0, 0);
+	padding: 1em;
+	border-radius: 5px;
+}
+#countdown:focus, #countup:focus {
+	background: grey;
+	color: white;
+}
