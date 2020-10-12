@@ -44,34 +44,6 @@ const countUp = () => {
   }
 };
 
-function count() {
-  var seed = document.getElementById("seed").getAttribute("value");
-  var max = document.getElementById("max").getAttribute("value");
-  var temp = 1;
-  var output = document.getElementById("output");
-  temp = seed;
-  console.log("seed:" + seed);
-  console.log("max:" + max);
-  var id = setInterval(function () {
-    var intdivby2 = temp % 2;
-    var intdivby3 = temp % 3;
-
-    document.getElementById("output").innerHTML +=
-      "remainder of " +
-      temp +
-      " divided by 2 is:" +
-      intdivby2.toString() +
-      "<br>";
-    document.getElementById("output").innerHTML +=
-      "remainder of " +
-      temp +
-      " divided by 3 is:" +
-      intdivby3.toString() +
-      "<br>";
-    temp++;
-    if (temp > max) clearInterval(id);
-  }, 1000);
-}
 // Solution courtesy of S.Prathare:
 // https://stackoverflow.com/questions/64304558/countup-function-failing-to-increment-from-0-to-inputted-time/64304995#64304995
 
@@ -86,5 +58,5 @@ const clearHTML = () => {
 let btn = document.getElementById("enterTime");
 
 btn.addEventListener("click", () => {
-  count();
+  countUp();
 });
