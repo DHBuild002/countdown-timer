@@ -1,5 +1,5 @@
 // Countdown Timer
-/*
+
 const countDown = () => {
   let inputTime = document.getElementById("input").value;
 
@@ -16,9 +16,9 @@ const countDown = () => {
     }, 1000);
   }
 };
-*/
-// Main Chunk of code sourced from here: https://stackoverflow.com/a/48343641/7206229
 
+// Main Chunk of code sourced from here: https://stackoverflow.com/a/48343641/7206229
+/*
 const countUp = () => {
   let interval;
   let inputTime = document.getElementById("input").value; // 5
@@ -45,7 +45,7 @@ const countUp = () => {
     interval = setInterval(run, 10000);
   }
 };
-
+*/
 // Solution courtesy of S.Prathare:
 // https://stackoverflow.com/questions/64304558/countup-function-failing-to-increment-from-0-to-inputted-time/64304995#64304995
 
