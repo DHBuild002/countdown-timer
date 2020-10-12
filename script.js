@@ -31,16 +31,18 @@ const countUp = () => {
     let run = () => {
       // 5 > 0
       let clock = document.getElementById("countupClock");
+
       if (clock.innerHTML < inputTime) {
         clock.innerHTML++;
+        debugger;
         console.log("Counter Value: ", clock.innerHTML);
       } else {
         clearInterval(interval);
-        console.log("Cleared Interval");
+        console.log("Cleared Interval " + inputTime);
         clearHTML();
       }
     };
-    interval = setInterval(run, 1000);
+    interval = setInterval(run, 10000);
   }
 };
 
