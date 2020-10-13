@@ -99,7 +99,6 @@ main {
 .left-control, .center-control, .right-control{
 	cursor: pointer;
 }
-
 .left-control {
 	width: 15.33%;
 	background: transparent;
