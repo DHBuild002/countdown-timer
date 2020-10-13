@@ -87,15 +87,15 @@ main {
 	margin: auto;
 }
 .controls {
-	text-align: center;
-	display: flex; 
-	justify-content: space-between;
-	align-content: flex-start; 
- 	width: 100%;
-	margin: 0 auto;
-	background: lightgray; 
-	padding: .3em;
-} 
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    width: 100%;
+    margin: 0 auto;
+    background: lightgray;
+    padding: 0.6em;
+}
 .left-control, .center-control, .right-control{
 	cursor: pointer;
 }
