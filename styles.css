@@ -29,14 +29,16 @@ p {
 	box-shadow: 1px 1px 10px rgb(230, 230, 230);
 }
 input {
-	text-decoration: none;
-	border-style: none;
-	outline: none;
-	padding: 1em;
-	width: 100%;
-	border: none;
-	border-radius: 3px;
-	cursor: pointer;
+    text-decoration: none;
+    border-style: none;
+    outline: none;
+    padding: 1em;
+    position: relative;
+    right: 7%;
+    width: 75%;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
 }
 input:focus {
     background: rgb(230, 230, 230);
@@ -49,7 +51,7 @@ button {
     padding: 1em;
     width: 35%;
     position: relative;
-    right: 25%;
+    right: 48%;
     background-color: rgb(255, 255, 255);
     box-shadow: none;
     cursor: pointer;
