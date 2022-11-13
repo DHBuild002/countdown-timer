@@ -1,14 +1,17 @@
 body {
 	font-family: "Roboto", sans-serif;
-	font-size: 2em;
+	font-size: 3em;
+	width: 100%;
 	background-color: rgb(249, 249, 249);
 	margin: 0;
 }
 h1{
 	text-align: center;
+	font-weight: 200;
 	margin: 0;
 	color: white;
-	text-shadow: 2px 1px 1px rgb(233, 233, 233);
+	text-shadow: 1px 1px 1px rgb(233, 233, 233);
+	letter-spacing: 5px;
 }
 h3{
 	margin: 0;
@@ -34,10 +37,10 @@ input {
     outline: none;
     padding: 1em;
     position: relative;
-    right: 7%;
-    width: 75%;
-    border: none;
-    border-radius: 3px;
+    right: 0%;
+    width: 100%;
+    border: rgb(106, 125, 204) 1px solid;
+    border-radius: 1px;
     cursor: pointer;
 }
 input:focus {
@@ -49,17 +52,19 @@ button {
     text-decoration: none;
     border-style: none;
     padding: 1em;
-    width: 35%;
+    width: 100%;
     position: relative;
-    right: 48%;
-    background-color: rgb(255, 255, 255);
+    right: 25%;
+    background-color: rgb(252 254 255);
     box-shadow: none;
     cursor: pointer;
     border-radius: 5px;
+    border-bottom: 1px solid grey;
+    height: 80%;
 }
 button:hover{
 	color: white;
-	background-color: black;
+	background-color: rgb(106, 125, 204);
 	transition: ease-in-out 120ms;
 	
 }
@@ -88,36 +93,37 @@ main {
 }
 .controls {
     text-align: center;
-    display: flex;
-    justify-content: space-between;
-    align-content: flex-start;
-    width: 100%;
+    display: grid;
+	grid-template-columns: repeat(3,1fr);
+    width: auto;
     margin: 0 auto;
     background: lightgray;
-    padding: 0.6em;
+    padding: 1em;
 }
 .left-control, .center-control, .right-control{
 	cursor: pointer;
 }
 .left-control {
-	width: 15.33%;
-	background: transparent;
+	justify-self: start;
+	width: auto;
+	background: white;
 	margin: 0 auto;
 	border: none;
 	border-radius: 2px;
 }
 .center-control{
-	width: 33.33%;
+	width: auto;
+	justify-self: center;
 }
 .right-control {
-	width: 33.33%;
+	justify-self: end;
+	width: 100%;
 }
 .toggle-area {
-	border-left: none
-	
+	border-left: none	
 }
 #countdown, #countup {
-	display: none;
+	display: block;
 	border: .5px solid rgb(211, 211, 211);
 	box-shadow: 1px 3px 1px .2px grey;
 	background: white;
