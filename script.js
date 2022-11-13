@@ -32,10 +32,13 @@ const countUp = () => {
       // 5 > 0
       let clock = document.getElementById("countupClock");
 
-      if (clock.innerHTML < inputTime) {
-        clock.innerHTML++;
+      if (clock.innerHTML != inputTime) {
+        clock.innerHTML++; // This will add to the DOM elememnt, but stop at either 2 or 3?!
+        // inputTime++; // This adds to the inputTime value, and not the DOM number
+
         // debugger;
-        console.log("Counter Value: ", clock.innerHTML);
+        console.log('Input Time is the same:' + inputTime);
+        console.log("Counter Value: " + clock.innerHTML);
       } else {
         clearInterval(interval);
         console.log("Cleared Interval " + inputTime);
