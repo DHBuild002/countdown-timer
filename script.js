@@ -17,8 +17,8 @@ const countDown = () => {
   }
 };
 
-// Main Chunk of code sourced from here: https://stackoverflow.com/a/48343641/7206229
-/*
+// Main Chunk of code sourced from here: https://stackoverflow.com/a/48343641/7206229 */
+
 const countUp = () => {
   let interval;
   let inputTime = document.getElementById("input").value; // 5
@@ -34,7 +34,7 @@ const countUp = () => {
 
       if (clock.innerHTML < inputTime) {
         clock.innerHTML++;
-        debugger;
+        // debugger;
         console.log("Counter Value: ", clock.innerHTML);
       } else {
         clearInterval(interval);
@@ -42,10 +42,10 @@ const countUp = () => {
         clearHTML();
       }
     };
-    interval = setInterval(run, 10000);
+    interval = setInterval(run, 1000);
   }
 };
-*/
+
 // Solution courtesy of S.Prathare:
 // https://stackoverflow.com/questions/64304558/countup-function-failing-to-increment-from-0-to-inputted-time/64304995#64304995
 
