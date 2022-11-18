@@ -36,37 +36,37 @@ input {
     border-style: none;
     outline: none;
     padding: 1em;
+	box-sizing: border-box;
     position: relative;
-    right: 0%;
     width: 100%;
     border: rgb(106, 125, 204) 1px solid;
-    border-radius: 1px;
+    border-radius: 5px;
     cursor: pointer;
 }
 input:focus {
     background: rgb(230, 230, 230);
-    box-shadow: none;
-    border: 1px solid rgb(0 0 0);
+    border: rgb(82, 97, 159) 1px solid;;
 }
 button {
     text-decoration: none;
+	text-align: center;
     border-style: none;
     padding: 1em;
-    width: 100%;
+    width: auto;
     position: relative;
-    right: 25%;
+    right: auto;
     background-color: rgb(252 254 255);
-    box-shadow: none;
     cursor: pointer;
     border-radius: 5px;
     border-bottom: 1px solid grey;
-    height: 80%;
+    height: auto;
+	margin-top: 15px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 button:hover{
 	color: white;
 	background-color: rgb(106, 125, 204);
-	transition: ease-in-out 120ms;
-	
+	transition: ease-in-out 120ms;	
 }
 p {
 	margin: 10px;
@@ -94,33 +94,30 @@ main {
 .controls {
     text-align: center;
     display: grid;
-	grid-template-columns: repeat(3,1fr);
+	grid-template-columns: repeat(2, 1fr);
     width: auto;
     margin: 0 auto;
     background: lightgray;
     padding: 1em;
 }
-.left-control, .center-control, .right-control{
+.left-controls, .right-controls{
 	cursor: pointer;
 }
-.left-control {
-	justify-self: start;
-	width: auto;
-	background: white;
-	margin: 0 auto;
+.left-controls {
+	justify-self: stretch;
+	background: none;
+	margin: .5em;
 	border: none;
 	border-radius: 2px;
 }
-.center-control{
-	width: auto;
+.right-controls {
 	justify-self: center;
-}
-.right-control {
-	justify-self: end;
-	width: 100%;
+	width: auto;
 }
 .toggle-area {
-	border-left: none	
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(2, 2fr);	
 }
 #countdown, #countup {
 	display: block;
@@ -128,14 +125,17 @@ main {
 	box-shadow: 1px 3px 1px .2px grey;
 	background: white;
 	color: black;
-	padding: 1em;
+	padding: .5em;
 	border-radius: 5px;
+	font-size: 20px;
+	text-align: center;
+	margin-top: .8em;
+	margin-right: .7em	
 }
 #countdown:hover, #countup:hover{
 	border: .5px solid rgb(211, 211, 211);
 	background: rgb(244, 244, 244);
 	color: rgb(0, 0, 0);
-	padding: 1em;
 	border-radius: 5px;
 }
 #countdown:focus, #countup:focus {
