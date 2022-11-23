@@ -94,30 +94,46 @@ main {
 .controls {
     text-align: center;
     display: grid;
+	align-items: center;
 	grid-template-columns: repeat(2, 1fr);
     width: auto;
     margin: 0 auto;
     background: lightgray;
-    padding: 1em;
+    padding: .3em;
+	padding-bottom: .9em
 }
 .left-controls, .right-controls{
 	cursor: pointer;
 }
 .left-controls {
-	justify-self: stretch;
+	justify-self: self-end;
 	background: none;
 	margin: .5em;
 	border: none;
 	border-radius: 2px;
 }
 .right-controls {
-	justify-self: center;
+	justify-self: self-start;
+	align-items: center;
 	width: auto;
+	margin: 45px;
 }
 .toggle-area {
 	width: 100%;
 	display: grid;
-	grid-template-columns: repeat(2, 2fr);	
+	grid-template-columns: repeat(1, 2fr);
+	margin-right: 50px;
+}
+span {
+	width: 100%;
+	display: block;
+	position: relative;
+	margin-bottom: 1em
+
+}
+.direction-toggle {
+	font-size: 20px;
+	letter-spacing: 2px
 }
 #countdown, #countup {
 	display: block;
