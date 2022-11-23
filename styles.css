@@ -154,7 +154,7 @@ span {
 	color: rgb(0, 0, 0);
 	border-radius: 5px;
 }
-#countdown:focus, #countup:focus {
-	background: grey;
-	color: white;
+#countdown:active, #countup:active {
+	background-color:rgb(106, 125, 204);
+	border: none;
 }

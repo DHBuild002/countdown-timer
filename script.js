@@ -1,5 +1,13 @@
 // Countdown Timer
 
+const showMsg = () => {
+  console.log('Hi, this event happenned')
+}
+const toggleBtn = document.getElementsByClassName('btn');
+toggleBtn[0].addEventListener("click", showMsg);
+toggleBtn[1].addEventListener("click", showMsg);
+
+
 const countDown = () => {
   let inputTime = document.getElementById("input").value;
 
